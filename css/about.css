@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-family: "Orbitron", sans-serif;
+  --sub-font: "Chakra Petch", sans-serif;
+  --main-colour: #2a70f4;
+  --main-padding: 0px 50px;
+  --border: 1px solid white;
+  --box-shadow: rgba(255, 255, 255, 0.096);
+}
+
+.about-us {
+  /* height: 100vh; */
+  width: 100%;
+  /* background-color: var(--main-colour); */
+  padding: var(--main-padding);
+}
+.about-text {
+  text-align: center;
+  margin-top: 70px;
+
+  h6 {
+    background-color: #f2f6fe;
+    padding: 6px 20px;
+    border-radius: 7px;
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+    gap: 8px;
+    color: var(--main-colour);
+    font-family: var(--sub-font);
+    font-size: 18px;
+    font-weight: 900;
+    border: 1px solid #dae3f5;
+  }
+  svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  h2 {
+    margin-top: 15px;
+    font-family: var(--font-family);
+    font-size: 40px;
+    span {
+      color: var(--main-colour);
+    }
+  }
+
+  p {
+    margin-top: 15px;
+    font-family: var(--sub-font);
+    font-size: 20px;
+    color: #6c757d;
+  }
+}
+.about-grid {
+  margin-top: 40px;
+  /* background-color: #2a70f4; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  height: 100vh;
+  width: 100%;
+}
+.about-grid-item:first-child {
+  width: 90%;
+  /* height: 400px; */
+  justify-self: center;
+  align-self: center;
+  padding: 30px 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  /* box-shadow: var(--box-shadow); */
+  h2 {
+    font-family: var(--font-family);
+    font-size: 25px;
+  }
+  p {
+    font-family: var(--sub-font);
+    color: #6c757d;
+  }
+}
+.about-grid-item:last-child {
+  img {
+    /* border-radius: 10px; */
+    /* box-shadow: 0 8px 20px  rgba(0,0,0,0.15); */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.first {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #6c757d;
+  font-weight: 400;
+  font-family: var(--sub-font);
+}
+
+.value {
+  /* height: 100vh; */
+  width: 100%;
+  padding: var(--main-padding);
+  /* background-color: #2a70f4; */
+  margin-top: 70px;
+}
+.value-text {
+  text-align: center;
+  margin-top: 80px;
+  h2 {
+    font-family: var(--font-family);
+    font-size: 30px;
+    font-weight: 700;
+    /* color: white; */
+    span {
+      color: var(--main-colour);
+    }
+  }
+  p {
+    margin-top: 15px;
+    font-family: var(--sub-font);
+    font-size: 20px;
+    color: #6c757d;
+  }
+}
+
+.value-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.value-grid-item {
+  width: 90%;
+  height: 260px;
+  justify-self: center;
+  align-self: center;
+  padding: 30px 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 20px;
+  transition: all 0.3s ease-in-out;
+
+  svg {
+    width: 30px;
+    height: 30px;
+    color: var(--main-colour);
+    margin-bottom: 30px;
+    transition: all 0.3s ease-in-out;
+  }
+  h2 {
+    font-family: var(--font-family);
+    font-size: 25px;
+    /* color: var(--main-colour); */
+    margin-bottom: 22px;
+  }
+  p {
+    font-family: var(--sub-font);
+    color: #6c757d;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+.value-grid-item:nth-child(2) {
+  height: 85%;
+  box-shadow: 0 8px 22px rgba(226, 93, 93, 0.15);
+}
+.heart svg {
+  color: red;
+}
+.users svg {
+  color: #28a745;
+}
+.lightning svg {
+  color: #ffc107;
+}
+.target svg {
+  color: #a855f7;
+}
+.globe svg {
+  color: #17a2b8;
+}
+.value-grid-item:hover {
+  svg {
+    transform: scale(1.2);
+  }
+}
+
+@media (max-width: 600px) {
+  .about-text {
+    margin-bottom: 30px;
+    h2 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+  .about-grid {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .value-grid {
+    grid-template-columns: 1fr !important;
+    height: auto;
+    margin: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .value-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .about-text {
+    h2 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+  .about-grid {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  .value-grid-item{
+    width: 100%;
+    height: 100%;
+  }
+
+}
