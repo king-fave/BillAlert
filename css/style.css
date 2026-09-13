@@ -5,7 +5,9 @@
 :root {
   --font-family: "Orbitron", sans-serif;
   --sub-font: "Chakra Petch", sans-serif;
-  --main-colour-h2: #2a70f4;
+  --main-colour-h2: #2a70f4; 
+  --main-colour: #2a70f4;
+
   --main-padding: 0px 50px;
   --border: 1px solid rgba(0, 0, 0, 0.096);
   --default: white;
