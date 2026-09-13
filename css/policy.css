@@ -9,8 +9,11 @@
   --sub-font: "Chakra Petch", sans-serif;
   --main-colour: #2a70f4;
   --main-padding: 0px 50px;
-  --border: 1px solid white;
+    --border: 1px solid rgba(0, 0, 0, 0.096);
   --background-colour: rgba(255, 255, 255, 0.096);
+    --surface: #ffffff;
+    --text-muted: #667085;
+    --text-color:  #000000;
 }
 
 .policy{
@@ -23,7 +26,7 @@
      text-align: center;
   padding-top: 80px;
   h6 {
-    background-color: #f2f6fe;
+    background-color: var(--surface-muted);
     padding: 6px 20px;
     border-radius: 7px;
     display: inline-flex;
@@ -34,7 +37,7 @@
     font-family: var(--sub-font);
     font-size: 18px;
     font-weight: 900;
-    border: 1px solid #dae3f5;
+    border: var(--border);
     margin-bottom: 10px;
   }
   svg {
@@ -45,6 +48,7 @@
     margin-top: 10px;
     font-family: var(--font-family);
     font-size: 50px;
+    color: var(--text-color) !important;
     span {
       color: var(--main-colour);
     }
@@ -53,7 +57,7 @@
     margin-top: 15px;
     font-family: var(--sub-font);
     font-size: 20px;
-    color: #6c757d;
+    color: var(--text-muted);
     width: 60%;
     display: inline-block;
   }
@@ -76,8 +80,17 @@
 .flex-item{
     width: 100%;
     /* height: 300px; */
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    background-color: var(--surface);
+    box-shadow: var(--box-shadow);
        border-radius: 15px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    h2{
+        color: var(--text-color) ;
+    }
+}
+.flex-item:hover{
+    transform: translateY(-4px);
+    box-shadow: var(--box-shadow);
 }
 .intro{
     padding: 20px 25px;
@@ -88,7 +101,7 @@
     }
     p{
         font-size: 16px;
-        color:  #6c757d;
+        color: var(--text-muted);
         font-weight: 400;
         font-family: var(--sub-font);
     }
@@ -105,20 +118,22 @@
         font-family: var(--sub-font);
         font-size: 24px;
         border-bottom: 1px solid#cdcecf;
+        
     }
     h3{
         font-family: var(--sub-font);
+        color: var(--text-color);
 
     }
         p{
         font-size: 16px;
-        color:  #6c757d;
+        color: var(--text-muted);
         font-weight: 400;
         font-family: var(--sub-font);
     }
     ul{
         padding: 0 14px;
-        color: #6c757d;
+        color: var(--text-muted);
     }
     li{
         font-family: var(--sub-font);
@@ -152,7 +167,7 @@
     }
     ul{
         padding: 0 14px;
-        color: #6c757d;
+        color: var(--text-muted);
     }
     li{
         font-family: var(--sub-font);
@@ -175,7 +190,7 @@
         margin-top: 10px;
     }
     p{
-        color: #6c757d;
+        color: var(--text-muted);
         font-family: var(--sub-font);
         font-size: 16px;
     }
@@ -195,7 +210,7 @@
         display: inline-block;
         font-size: 14px;
         line-height: 2;
-        color: #6c757d;
+        color: var(--text-muted);
         /* margin-top: 14px; */
     }
 }

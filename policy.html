@@ -20,7 +20,7 @@
 </head>
 
 <body>
-  <section class="nav">
+    <section class="nav">
         <div class="nav-container">
             <div class="icon">
                 <a href="index.html"> <i class="fa-solid fa-comment-dots">
@@ -30,32 +30,34 @@
             </div>
 
 
-           
+
 
             <div id="nav" class="nav-links">
                 <button class="hideMenu" id="hideMenu">
-                
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-x-lg" viewBox="0 0 16 16">
-                            <path
-                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
-                        </svg>
-                    
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path
+                            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                    </svg>
+
                 </button>
 
-               <div class="nav-link">
-                 <ul>
-                    <li><a href="about.html">about</a></li>
-                    <li><a href="contact.html">contact us</a></li>
-                    <li><a href="policy.html" class="active">privacy policy</a></li>
-                </ul>
-
-                <div class="get-started">
-                    <a href="#">
-                        <button>Get Started →</button>
-                    </a>
+                <div class="nav-link">
+                    <ul>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="contact.html">contact us</a></li>
+                        <li><a href="policy.html" class="active">privacy policy</a></li>
+                    </ul>
+                    <div class="get-started">
+                        <button class="mode-btn" onclick="toggleTheme()">
+                            <i class="fa-regular fa-sun theme-icon" id="theme-icon"></i>
+                        </button>
+                        <a href="#">
+                            <button>Get Started →</button>
+                        </a>
+                    </div>
                 </div>
-               </div>
             </div>
 
             <div class="menu-Toggle" id="openMenuButton">
@@ -100,11 +102,11 @@
                     <h2>introduction</h2> <br>
                     <p>Welcome to Bills Alert. Your privacy is important to us. This Privacy Policy explains how we
                         collect, use, disclose, and safeguard your information when you use our Instant Checkout Portal
-                        for Virtual Top-Up (VTU) services. 
+                        for Virtual Top-Up (VTU) services.
 
-                        </p> <br> <br>
+                    </p> <br> <br>
 
-                        <p>Please read this policy carefully to understand our practices regarding your information.</p>
+                    <p>Please read this policy carefully to understand our practices regarding your information.</p>
                 </div>
             </div>
             <div class="flex-item">
@@ -112,24 +114,25 @@
                     <h2>Information we collect</h2><br>
                     <h3>Personal Information</h3>
                     <ul>
-                        <li>Device Information: IP address, device ID, operating system version, and mobile network information.</li>
+                        <li>Device Information: IP address, device ID, operating system version, and mobile network
+                            information.</li>
                         <li>Portal Usage: Features used, actions taken, and interactions within the portal.</li>
                         <li>Location Data: Geolocation information to provide location-based services.</li>
-                    </ul>  <br>
+                    </ul> <br>
 
                     <h2 class="one">Usage data</h2>
-                       <ul>
+                    <ul>
                         <li>Account Information: Name, email address, phone number, and other registration details.</li>
                         <li>Payment Information: Billing details, payment method, and payment records.</li>
                         <li>Contact Information: Details you provide to enable us to communicate with you.</li>
-                    </ul> 
+                    </ul>
 
                 </div>
             </div>
-              <div class="flex-item">
+            <div class="flex-item">
                 <div class="gathered-info">
-                    <h2>   How to use your  information</h2><br>
-                
+                    <h2> How to use your information</h2><br>
+
                     <ul>
                         <li>Provide and manage your account.</li>
                         <li>Process your transactions and deliver the requested services.</li>
@@ -137,23 +140,33 @@
                         <li>Improve and personalize your experience on our portal.</li>
                         <li>Communicate with you, including sending promotional materials and updates.</li>
                         <li>Analyze usage patterns to enhance our portal's features and functionality.</li>
-                    </ul> 
+                    </ul>
 
                 </div>
             </div>
 
             <div class="flex-item">
                 <div class="gathered-infor ">
-                    <span ><h2 class="one"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-icon lucide-shield"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>  contact us</h2></span>
-                
-                  <p>If you have any questions or concerns about this Privacy Policy or our practices, please contact us at:</p>
-                  <span> Email:  <a href="mailto:info@billsalert.com">info@billsalert.com</a></span>
-                    <span> address:  <p>123 Main Street, City, State 12345</p></span>
+                    <span>
+                        <h2 class="one"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-shield-icon lucide-shield">
+                                <path
+                                    d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+                            </svg> contact us</h2>
+                    </span>
+
+                    <p>If you have any questions or concerns about this Privacy Policy or our practices, please contact
+                        us at:</p>
+                    <span> Email: <a href="mailto:info@billsalert.com">info@billsalert.com</a></span>
+                    <span> address: <p>123 Main Street, City, State 12345</p></span>
                 </div>
             </div>
             <div class="div">
                 <br> <br>
-                <em>Bills Alert respects your privacy and is committed to protecting your personal information. Thank you for trusting us with your data!</em>
+                <em>Bills Alert respects your privacy and is committed to protecting your personal information. Thank
+                    you for trusting us with your data!</em>
             </div>
         </div>
 
@@ -243,11 +256,11 @@
             </div>
         </div>
     </section>
- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
-      <Script src="script.js"></Script>
+    <Script src="script.js"></Script>
 </body>
 
 </html>

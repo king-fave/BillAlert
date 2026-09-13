@@ -13,63 +13,68 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Orbitron:wght@400..900&display=swap"
         rel="stylesheet">
-        
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
-      <style>
-        /* PRELOADER */
-  .preloader{
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    background-color: #fff;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 9999;
+<style>
+    /* PRELOADER */
+    .preloader {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        background-color: #fff;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
 
-  }
-  .preloader .loading-dots{
-    display: flex;
-    /* align-items: center;
-    justify-content: center; */
-    gap: 5px;
-  }
-
-  .preloader .dots{
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #2a70f4;
-    animation: bounce 0.6s infinite alternate;
-  }
-
-  .preloader .dots:nth-child(2){
-    animation-delay: 0.2s;
-  }
-  .preloader .dots:nth-child(3){
-    animation-delay: 0.4s;
-  }
-  @keyframes bounce {
-    to{
-      transform: translateY(-15px);
     }
-  }
-  </style>
-<body>    
-               
+
+    .preloader .loading-dots {
+        display: flex;
+        /* align-items: center;
+    justify-content: center; */
+        gap: 5px;
+    }
+
+    .preloader .dots {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #2a70f4;
+        animation: bounce 0.6s infinite alternate;
+    }
+
+    .preloader .dots:nth-child(2) {
+        animation-delay: 0.2s;
+    }
+
+    .preloader .dots:nth-child(3) {
+        animation-delay: 0.4s;
+    }
+
+    @keyframes bounce {
+        to {
+            transform: translateY(-15px);
+        }
+    }
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+<body>
+
     <!-- PRE-LOADER -->
-     <section class="preloader">
+    <section class="preloader">
         <div class="loading-dots">
             <div class="dots"></div>
             <div class="dots"></div>
             <div class="dots"></div>
         </div>
-     </section>
+    </section>
     <section class="nav">
         <div class="nav-container">
             <div class="icon">
@@ -81,31 +86,33 @@
 
             <div id="nav" class="nav-links">
                 <button class="hideMenu" id="hideMenu">
-                
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-x-lg" viewBox="0 0 16 16">
-                            <path
-                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
-                        </svg>
-                    
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path
+                            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                    </svg>
+
                 </button>
 
-               <div class="nav-link">
-                 <ul>
-                    <li><a href="about.html" >about</a></li>
-                    <li><a href="contact.html">contact us</a></li>
-                    <li><a href="policy.html">privacy policy</a></li>
-                </ul>
-
-                <div class="get-started">
-                    <a href="#">
-                        <button>Get Started →</button>
-                    </a>
+                <div class="nav-link">
+                    <ul>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="contact.html">contact us</a></li>
+                        <li><a href="policy.html">privacy policy</a></li>
+                    </ul>
+                    <div class="get-started">
+                        <button class="mode-btn" onclick="toggleTheme()">
+                          <i class="fa-regular fa-sun theme-icon" id="theme-icon"></i>
+                        </button>
+                        <a href="#">
+                            <button>Get Started →</button>
+                        </a>
+                    </div>
                 </div>
-               </div>
             </div>
 
-            <div class="menu-Toggle" id="openMenuButton" >
+            <div class="menu-Toggle" id="openMenuButton">
                 <div></div>
                 <div></div>
                 <div></div>
@@ -556,18 +563,18 @@
             </div>
         </div>
     </section>
-    
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
     <script>
-      const preloader = document.querySelector('.preloader');
-      window.onload = function (){
-        preloader.style.display = 'none';
-      }
+        const preloader = document.querySelector('.preloader');
+        window.onload = function () {
+            preloader.style.display = 'none';
+        }
     </script>
-     <Script src="script.js"></Script>
+    <Script src="script.js"></Script>
 </body>
 
 </html>
